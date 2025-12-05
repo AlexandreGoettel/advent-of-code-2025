@@ -20,7 +20,7 @@ class AOC {
         void set_start(), set_end();
         std::ifstream file;
     public:
-        void run(int);
+        void run(int), run(int, int);
 };
 
 #endif

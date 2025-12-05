@@ -38,7 +38,7 @@ unsigned long int AOC::part_1() {
             if (position == 0) count_1 += 1;
         }
     }
-    cout << "Part 2 answer: " << count_2 << endl;
+    // cout << "Part 2 answer: " << count_2 << endl;
     return count_1;
 }
 
@@ -49,5 +49,5 @@ unsigned long int AOC::part_2() {
 
 int main() {
     AOC *aoc = new AOC(1, false);
-    aoc->run(1);
+    aoc->run(1, 10);
 }
