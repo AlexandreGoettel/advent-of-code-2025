@@ -6,11 +6,12 @@
 
 
 // Constructor
-AOC::AOC(int day, bool test) {
+AOC::AOC(int day, bool _test) {
     std::string filename;
-    if (test) filename = "input/day" + std::to_string(day) + "_test.csv";
+    if (_test) filename = "input/day" + std::to_string(day) + "_test.csv";
     else filename = "input/day" + std::to_string(day) + ".csv";
     file.open(filename);
+    test = _test;
 }
 
 auto AOC::get_time() -> std::chrono::time_point<std::chrono::high_resolution_clock> {

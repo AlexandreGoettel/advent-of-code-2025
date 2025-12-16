@@ -21,6 +21,7 @@ class AOC {
         std::ifstream file;
     public:
         void run(int), run(int, int);
+        bool test;
 };
 
 #endif
